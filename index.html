@@ -8,28 +8,34 @@
   <title>裙子放假</title>
 
 <style>
-  div {
-      position: relative;
-      top : 200px;
-      left: 300px;
-  }
-  span {
-      background: black;
-      padding: 10px 30px;
-      font-size: 50px;
-      color: white;
-      margin: 10px;
-  }
+    html, body {
+        height: 100%;
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        flex-direction: column;
+    }
+    span {
+        background: black;
+        padding: 10px 30px;
+        font-size: 50px;
+        color: white;
+        margin: 10px;
+    }
+    p {
+        font-size: 30px;
+    }
 </style>
 
 </head>
 
 <body>
+  <p>裙子放假倒计时</p>
   <div>
-    <span class="day">0</span>天
-    <span class="hour">1</span>时
-    <span class="minute">2</span>分
-    <span class="second">3</span>秒
+    <span class="day">0</span>
+    <span class="hour">1</span>
+    <span class="minute">2</span>
+    <span class="second">3</span>
 </div>
 <script>
     let day = document.querySelector('.day');
@@ -56,10 +62,6 @@
         second.innerHTML = s;
     }
 </script>
-
-
-
-
   </div>
 </body>
 </html>
